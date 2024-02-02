@@ -1,0 +1,5 @@
+Sleepboys
+Devhack 5.0
+Report for Project
+Firstly I would like to make it clear that we are taking the AI/ML track.
+Main Idea - Our Project will depend on Using AI/Deep Learning to detect Images.
