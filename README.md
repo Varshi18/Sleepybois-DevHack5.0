@@ -6,4 +6,4 @@ This model is made on Yolov5 free package running on python
 
 To run this Application, execute the detect3.py file on the compiler (install all the libraries mentioned in requirements.txt)
 
-The Application runs an AI chatbot and Object detection proccess at the same time, integrating it seamlessly for immersive experience
+The Application runs an AI chatbot and Object detection process at the same time, integrating it seamlessly for immersive experience.
