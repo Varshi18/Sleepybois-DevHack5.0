@@ -1,11 +1,11 @@
 import speech_recognition as sr
 import pyttsx3
 import webbrowser
-import openai
+#import openai
 import datetime
 
 # Set your OpenAI API key
-openai.api_key = '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'
+#openai.api_key = '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'
 
 def listen():
     recognizer = sr.Recognizer()
@@ -52,16 +52,6 @@ def execute_command(command):
         speak(f"Searching for {search_query} on the web.")
         open_browser(f"https://www.google.com/search?q={search_query}")
 
-    elif "openai" in command:
-        speak("Sure, let's use OpenAI. What would you like to ask?")
-        question = listen()
-        response = openai.Completion.create(
-            engine="text-davinci-003",
-            prompt=question,
-            max_tokens=100
-        )
-        speak(response.choices[0].text)
-
     elif "exit" in command:
         speak("Goodbye!")
         exit()
@@ -70,7 +60,7 @@ def execute_command(command):
         speak("I'm sorry, I didn't understand that command.")
 
 def main():
-    speak("Initializing Jarvis. How can I assist you today?")
+    speak("Initializing Friday. How can I assist you today?")
 
     while True:
         command = listen()
